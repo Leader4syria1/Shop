@@ -1,0 +1,369 @@
+/* استيراد خط Tajawal */
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap');
+
+body {
+  font-family: 'Tajawal', sans-serif;
+  background-color: #0D0D0D;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* رأس الصفحة */
+header {
+  padding: 20px;
+  background-color: #111111;
+  box-shadow: 0 2px 10px rgba(255, 0, 255, 0.2);
+}
+
+.logo {
+  width: 100px;
+  margin-bottom: 10px;
+  width: 100px;
+height: 100px;
+border-radius: 50%;
+box-shadow: 0 6px 30px rgba(255, 0, 255, 0.2);
+}
+
+h1 {
+  font-size: 28px;
+  color: #A020F0;
+}
+
+p {
+  font-size: #A020F018px;
+}
+
+/* الأقسام */
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 2#A020F00px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.category {
+  background: #222;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(255, 0, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.category:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #a020f0;
+}
+
+.category-icon {
+  width: 80px;
+  margin-bottom: 10px;
+}
+
+/* الأزرار */
+.btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #a020f0, #8a2be2);
+  color: white;
+  padding: 12px 24px;
+  font-size: 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 10px;
+  display: block;
+  box-shadow: 0 8px px rgba(160, 32, 240, 0.3); /* الظل */
+}
+
+btn:hover {
+  transform: translateY(-4px); /* تأثير عند المرور */
+  box-shadow: 0 8px 25px rgba(160, 32, 240, 0.5); /* تكبير الظل عند المرور */
+}
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #a020f0;
+}
+
+/* الفوتر */
+footer {
+  margin-top: 40px;
+  padding: 15px;
+  background-color: #111;
+  font-size: 14px;
+  color: #aaa;
+}
+/* تنسيق قسم المنتجات */
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+/* تنسيق كل منتج */
+.product {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 15px;
+    width: 280px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(160, 32, 240, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.product:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #a020f0;
+}
+
+/* تنسيق صورة المنتج */
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* اسم المنتج */
+.product h2 {
+    font-size: 22px;
+    color: #ffcc00;
+    margin: 10px 0;
+}
+
+/* وصف المنتج */
+.description {
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 8px;
+}
+
+/* السعر */
+.price {
+    font-size: 20px;
+    color: #ff5722;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* توفر المنتج */
+.available {
+    font-size: 18px;
+    color: #00ff00;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* زر الشراء */
+.btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #a020f0, #8a2be2);
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+    display: block;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #a020f0;
+}
+
+/* زر العودة */
+.back-btn {
+    display: inline-block;
+    margin: 20px;
+    color: #ffcc00;
+    font-size: 18px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-btn:hover {
+    color: #fff;
+}
+/* زر متوفر الآن */
+.available-btn {
+    display: inline-block;
+    background: #27ae60;
+    color: white;
+    padding: 8px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-top: 10px;
+    user-select: none; /* يمنع تحديد النص */
+    cursor: default; /* يجعل الزر غير قابل للضغط */
+}
+/* تصغير حجم صور المنتجات وجعلها دائرية */
+.product img {
+    width: 100px; /* حجم الصورة */
+    height: 100px; /* ارتفاع متساوٍ لجعلها دائرية */
+    object-fit: cover; /* ضبط الصورة بحيث تبقى متناسقة */
+    border-radius: 50%; /* تحويل الصورة إلى دائرية */
+    margin: 10px auto; /* توسيط الصورة */
+    display: block; /* التأكد من عدم تأثرها بالعناصر الأخرى */
+    border: 3px solid #a020f0; /* إضافة إطار بنفس لون التصميم */
+}
+//* تنسيق عام للصفحة */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.back-btn {
+    color: #a020f0;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+h1 {
+    color: #ffcc00;
+    margin: 10px 0;
+}
+/* تنسيق عام للصفحة */
+body {
+    font-family: 'Tajawal', sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+.back-btn {
+    color: #a020f0;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h1 {
+    color: #ffcc00;
+    margin: 15px 0;
+    font-size: 32px;
+    font-weight: 800;
+    text-shadow: 0 2px 5px rgba(255, 204, 0, 0.3);
+}
+
+/* تنسيق قائمة اليوزرات */
+.users-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+    padding: 20px;
+}
+
+/* تصميم كل مستطيل */
+.user-item {
+    background: #1a1a1a;
+    width: 95%;
+    max-width: 750px;
+    padding: 25px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 20px rgba(160, 32, 240, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.user-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 30px #a020f0;
+}
+
+/* أيقونة المنصة */
+.platform-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* اسم اليوزر */
+.username {
+    font-size: 26px;
+    font-weight: bold;
+    color: #ffcc00;
+    flex-grow: 1;
+    text-align: center;
+    margin: 0 20px;
+    text-shadow: 0 2px 5px rgba(255, 204, 0, 0.3);
+}
+
+/* السعر */
+.price {
+    font-size: 24px;
+    color: #ff5722;
+    font-weight: bold;
+    margin: 0 20px;
+    text-shadow: 0 2px 5px rgba(255, 87, 34, 0.3);
+}
+
+/* زر الشراء */
+.buy-btn {
+    background: linear-gradient(135deg, #a020f0, #8a2be2);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 10px rgba(160, 32, 240, 0.3);
+}
+
+.buy-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #a020f0;
+}
+
+/* زر معطل */
+.buy-btn.disabled {
+    background: #555;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+footer {
+    margin-top: 60px;
+    padding: 25px;
+    background-color: #1a1a1a;
+    color: #a020f0;
+    font-size: 20px;
+    font-weight: bold;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+}
